@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+    function isAccount(str) {
+      var regexp = /^[_a-z0-9]{6,}$/;
+      if (regexp.test(str)) return true;
+      return false;
+    }
+    var str1 = "123abc_";
+    var str2 = "_abc123";
+    var str3 = ".@";
+    var str4 = "abcde";
+    document.writeln(isAccount(str1));
+    document.writeln(isAccount(str2));
+    document.writeln(isAccount(str3));
+    document.writeln(isAccount(str4));
+  </script>
+</body>
+</html>
